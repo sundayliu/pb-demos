@@ -29,6 +29,8 @@ LOCAL_SRC_FILES := \
     src/google/protobuf/reflection_ops.cc                 \
     src/google/protobuf/repeated_field.cc                 \
     src/google/protobuf/service.cc                        \
+    src/google/protobuf/io/strtod.cc \
+    src/google/protobuf/stubs/stringprintf.cc \
     src/google/protobuf/stubs/structurally_valid.cc       \
     src/google/protobuf/stubs/strutil.cc                  \
     src/google/protobuf/stubs/substitute.cc               \
@@ -43,7 +45,9 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/src/google/protobuf/io \
                                           $(LOCAL_PATH)/src/google/protobuf/stubs \
-                                          $(LOCAL_PATH)/src/google/protobuf
+                                          $(LOCAL_PATH)/src/google/protobuf \
+                                          $(LOCAL_PATH)/src \
+                                          $(LOCAL_PATH)
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_C_INCLUDES)
 LOCAL_EXPORT_LDLIBS     := -llog
