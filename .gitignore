@@ -32,3 +32,4 @@ obj/
 libs/
 gen/
 bin/
+*.classpath
