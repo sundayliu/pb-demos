@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# Android
+obj/
+libs/
+gen/
+bin/
